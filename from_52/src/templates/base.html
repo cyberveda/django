@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155192356-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155192356-1');
+
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="title" content="Kishor Nikam Photography">
+    <meta name="description" content="Kishor Nikam Photography located at Nirala Bazar, Aurangabad, Maharashtra 431001">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Ashish Kharche">
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="https://nyc3.digitaloceanspaces.com/kishornikamphotographyspace/kishornikamphotographystatic/about/1/Kishor_Nikam_-_About-apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="https://nyc3.digitaloceanspaces.com/kishornikamphotographyspace/kishornikamphotographystatic/about/1/Kishor_Nikam_-_About-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="https://nyc3.digitaloceanspaces.com/kishornikamphotographyspace/kishornikamphotographystatic/about/1/Kishor_Nikam_-_About-favicon-16x16.png">
+
+    <title>Kishor Nikam Photography</title>
+
+</head>
+
+<body oncontextmenu="return false;">
+
+{% include 'snippets/base_css.html' %}
+{% include 'snippets/header.html' %}
+
+<!-- Body -->
+<style type="text/css">
+	.main{
+		min-height: 100vh;
+		height: 100%;
+	}
+
+
+</style>
+<div class="main">
+    {% block content %}
+
+    {% endblock content %}
+</div>
+<!-- End Body -->
+
+{% include 'snippets/footer.html' %}
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.7.0/marked.min.js"></script>
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			$(".content-markdown").each(function(){
+				var content = $(this).text()
+				console.log(content)
+				var markedContent = marked(content)
+				console.log(markedContent)
+				$(this).html(markedContent)
+			})
+			$(".content-markdown img").each(function(){
+				$(this).addClass("img-fluid");
+			})
+		})
+
+
+
+
+</script>
+</body>
+
+
+</html>

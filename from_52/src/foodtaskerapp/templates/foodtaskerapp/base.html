@@ -1,0 +1,37 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--{% block script %}-->
+<!--<script>-->
+<!--    $(document).ready(function() {-->
+<!--        var now = new Date();-->
+<!--        setInterval(function() {-->
+<!--            $.ajax({-->
+<!--                url: '/api/restaurant/order/notification/' + now.toISOString() + '/',-->
+<!--                method: 'GET'-->
+<!--                success: function(data) {-->
+<!--                    if (data['notification'] == 0) {-->
+<!--                        $('.badge').text('');-->
+
+<!--                    } else {-->
+<!--                        $('.badge').text(data['notification']);-->
+<!--                    }-->
+<!--                }-->
+<!--            })-->
+<!--        }, 3000!! )-->
+
+<!--    })-->
+<!--</script>-->
+
+<!--{% endblock %}-->
+
+<!--<h2>Nice, below is badge?</h2>-->
+<!--<h1><span class="badge"></span></h1>-->
+
+<!--</body>-->
+<!--</html>-->
