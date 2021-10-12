@@ -3,7 +3,7 @@ colorlog==4.0.2
 Django==2.2.2
 djangorestframework==3.9.4
 numpy==1.18.0
-opencv-python==4.1.1.26
+opencv-python==4.2.0.32
 Pillow==6.0.0
 python-decouple==3.1
 pytz==2019.1
